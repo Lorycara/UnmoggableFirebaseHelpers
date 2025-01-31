@@ -9,9 +9,9 @@
 import Foundation
 import SwiftUI
 import UIKit
-@preconcurrency import GoogleSignIn
+import GoogleSignIn
 
-public struct GoogleSignInResult {
+public struct GoogleSignInResult: Sendable {
     public let idToken: String
     public let accessToken: String
     public let email: String?

@@ -17,9 +17,7 @@ public final class SignInWithGoogleHelper {
         let config = GIDConfiguration(clientID: GIDClientID)
         GIDSignIn.sharedInstance.configuration = config
     }
-    
-    public init(){}
-        
+            
     @MainActor
     public func resultForSignIn(viewController: UIViewController? = nil) async throws -> GoogleSignInResult {
         guard let topViewController = viewController ?? UIApplication.topViewController() else {
