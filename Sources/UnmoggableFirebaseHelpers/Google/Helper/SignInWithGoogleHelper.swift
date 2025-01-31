@@ -9,7 +9,7 @@
 import Foundation
 import SwiftUI
 import UIKit
-import GoogleSignIn
+@preconcurrency import GoogleSignIn
 
 public final class SignInWithGoogleHelper {
     
