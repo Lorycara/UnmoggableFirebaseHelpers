@@ -24,7 +24,10 @@ let package = Package(
             name: "UnmoggableFirebaseHelpers",
         dependencies: [
                         .product(name: "GoogleSignIn", package: "GoogleSignIn-iOS") // ✅ Correct placement
-                    ]
+                    ],
+            resources: [
+                            .process("Assets.xcassets") // ✅ Include Assets
+                        ]
         )
     ]
 )
